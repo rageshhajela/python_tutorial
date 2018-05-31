@@ -1,0 +1,58 @@
+Python Problems
+===============
+Difficulty: Intermediate 
+
+
+Problem 1: Write an iterator class reverse_iter, that takes a list and iterates it from the reverse direction.
+
+Problem 2: Write a program that takes one or more filenames as arguments and prints all the lines which are longer than 40 characters.
+
+Problem 3: Write a function findfiles that recursively descends the directory tree for the specified directory and generates paths of all the files in the tree.
+
+Problem 4: Write a function to compute the number of python files (.py extension) in a specified directory recursively.
+
+Problem 5: Write a function to compute the total number of lines of code in all python files in the specified directory recursively.
+
+Problem 6: Write a function to compute the total number of lines of code, ignoring empty and comment lines, in all python files in the specified directory recursively.
+
+Problem 7: Write a program split.py, that takes an integer n and a filename as command line arguments and splits the file into multiple small files with each having n lines.
+
+Problem 8: Write a function peep, that takes an iterator as argument and returns the first element and an equivalant iterator.
+
+Problem 9: The built-in function enumerate takes an iteratable and returns an iterator over pairs (index, value) for each value in the source.
+
+
+Problem 10: Implement a program dirtree.py that takes a directory as argument and prints all the files in that directory recursively as a tree.
+
+Hint: Use os.listdir and os.path.isdir funtions.
+
+$ python dirtree.py foo/
+foo/
+|-- a.txt
+|-- b.txt
+|-- bar/
+|   |-- p.txt
+|   `-- q.txt
+`-- c.txt
+
+Problem 11: Write a function count_change to count the number of ways to change any given amount. Available coins are also passed as argument to the function.
+
+>>> count_change(10, [1, 5])
+3
+>>> count_change(10, [1, 2])
+6
+>>> count_change(100, [1, 5, 10, 25, 50])
+292
+
+Problem 12: Write a function permute to compute all possible permutations of elements of a given list.
+
+>>> permute([1, 2, 3])
+[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
+
+
+
+
+
+
+
+	

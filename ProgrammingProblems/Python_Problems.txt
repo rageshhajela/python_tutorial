@@ -1,0 +1,58 @@
+Python Problems
+---------------
+
+Problem 1: Write a program reverse.py to print lines of a file in reverse order.
+
+Problem 2: Write a program to print each line of a file in reverse order.
+
+Problem 3: Implement unix commands head and tail. The head and tail commands take a file as argument and prints its first and last 10 lines of the file respectively.
+
+Problem 4: Implement unix command grep. The grep command takes a string and a file as arguments and prints all lines in the file which contain the specified string.
+
+Problem 5: Write a program wrap.py that takes filename and width as aruguments and wraps the lines longer than width.
+
+Problem 6: The above wrap program is not so nice because it is breaking the line at middle of any word. Can you write a new program wordwrap.py that works like wrap.py, but breaks the line only at the word boundaries?
+
+Problem 7: Write a function triplets that takes a number n as argument and returns a list of triplets such that sum of first two elements of the triplet equals the third element using numbers below n. Please note that (a, b, c) and (b, a, c) represent same triplet.
+
+Problem 8: Improve the above program to print the words in the descending order of the number of occurrences.
+
+Problem 9: Write a program to count frequency of characters in a given file. Can you use character frequency to tell whether the given file is a Python program file, C program file or a text file?
+
+Problem 10: Write a program to find anagrams in a given list of words. Two words are called anagrams if one word can be formed by rearranging letters of another. For example ‘eat’, ‘ate’ and ‘tea’ are anagrams.
+
+Problem 11: Write a function invertdict to interchange keys and values in a dictionary. For simplicity, assume that all values are unique.
+
+[hint: we will be using os module for the below problems]
+
+Problem 1: Write a program to list all files in the given directory.
+
+Problem 2: Write a program extcount.py to count number of files for each extension in the given directory. The program should take a directory name as argument and print count and extension for each available file extension.
+
+Problem 3: Write a program to list all the files in the given directory along with their length and last modification time. The output should contain one line for each file containing filename, length and modification date separated by tabs.
+
+Hint: see help for os.stat.
+
+Problem 4: Write a program to print directory tree. The program should take path of a directory as argument and print all the files in it recursively as a tree.
+
+[re module]
+
+Problem 5: Write a function make_slug that takes a name converts it into a slug. A slug is a string where spaces and special characters are replaced by a hyphen, typically used to create blog post URL from post title. It should also make sure there are no more than one hyphen in any place and there are no hyphens at the biginning and end of the slug.
+
+Problem 6: Write a program links.py that takes URL of a webpage as argument and prints all the URLs linked from that webpage.
+
+Problem 7: Write a regular expression to validate a phone number.
+
+Problem 8: Write a program links.py that takes URL of a webpage as argument and prints all the URLs linked from that webpage.
+
+Problem 9: Write a regular expression to validate a phone number.
+
+Problem 10: Write a program myip.py to print the external IP address of the machine. Use the response from http://httpbin.org/get and read the IP address from there. The program should print only the IP address and nothing else.
+
+[others]
+Problem 1: Write a program csv2xls.py that reads a csv file and exports it as Excel file. The prigram should take two arguments. The name of the csv file to read as first argument and the name of the Excel file to write as the second argument.
+
+Problem 2: Install BeautifulSoup. BeautifulSoup is very good library for parsing HTML. Try using it to extract all HTML links from a webpage.
+
+
+
