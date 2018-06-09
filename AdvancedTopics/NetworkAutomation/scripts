@@ -1,0 +1,49 @@
+import socket
+addr = "172.217.163.164"
+port = 443
+socket_obj = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+socket.setdefaulttimeout(1)
+result = socket_obj.connect_ex((addr, port))
+print(result)
+socket_obj.close()
+
+
+
+import socket
+addr = ["172.217.163.164", "124.108.103.103", "182.220.102.234"]
+port = 443
+for each_addr in addr:
+    socket_obj = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    socket.setdefaulttimeout(5)
+    result = socket_obj.connect_ex((each_addr, port))
+    print(str(each_addr) + " result is: " + str(result))
+    socket_obj.close()
+	
+	
+	
+	
+import socket
+#addr = ["172.217.163.164", "124.108.103.103", "182.220.102.234"]
+port = 443
+for x in range(161,166):
+    addr = "172.217.163." + str(x)
+    socket_obj = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    socket.setdefaulttimeout(5)
+    result = socket_obj.connect_ex((addr, port))
+    print(str(addr) + " result is: " + str(result))
+    socket_obj.close()
+	
+	
+	
+	
+import socket
+#addr = ["172.217.163.164", "124.108.103.103", "182.220.102.234"]
+port = 443
+for x in range(161,166):
+    addr = "172.217.163." + str(x)
+    socket_obj = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    socket.setdefaulttimeout(5)
+    result = socket_obj.connect_ex((addr, port))
+    with open("new_file.txt", "a") as f:
+        f.write(str(addr) + " result is: " + str(result) + "\n")
+    socket_obj.close()
