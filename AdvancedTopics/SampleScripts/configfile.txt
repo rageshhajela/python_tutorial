@@ -1,2 +1,0 @@
-interface fa 1/2
-no description "Connected to uplink Switch"
