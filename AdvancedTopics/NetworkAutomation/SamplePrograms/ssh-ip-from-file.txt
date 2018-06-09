@@ -1,0 +1,31 @@
+from netmiko import ConnectHandler
+import getpass
+import sys
+import time
+
+##program to read device IP address from file and ssh to device
+device = {
+    'device_type': 'cisco_ios',
+    'ip': '192.168.43.10',
+    'username': 'username',
+    'password': 'password',
+    'secret':'password'
+    }
+ipfile=open("ip1.txt")
+print ("Script for SSH to device, Please enter your credential")
+device['username']=input("User name ")
+device['password']=getpass.getpass()
+device['secret']=input("Enter enable password: ")
+
+for line in ipfile:
+ 
+ device['ip']=line.strip("\n")
+ print("\n\nConnecting Device ",line)
+ net_connect = ConnectHandler(**device)
+ net_connect.enable()
+ time.sleep(2)
+ print ("Reading the interface status ")
+ output = net_connect.send_command('show ip int br')
+ print (output)
+
+ipfile.close()
